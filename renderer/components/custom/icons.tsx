@@ -4,6 +4,32 @@ import { cn } from '@/lib/utils'
 const ICON_SIZE_CLASS = 'w-5 h-5'
 
 /**
+ * Monitor icon
+ * @returns  {JSX.Element} Monitor icon
+ * @see https://simpleicons.org/?q=monitor - Icon source
+ */
+export function Monitor({ className }: { className?: string }): JSX.Element {
+  return (
+    <svg
+      className={cn(ICON_SIZE_CLASS, className)}
+      fill='none'
+      height='18'
+      stroke='#ddd'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth='1'
+      viewBox='0 0 24 24'
+      width='18'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect height='14' rx='2' width='20' x='2' y='3' />
+      <line x1='8' x2='16' y1='21' y2='21' />
+      <line x1='12' x2='12' y1='17' y2='21' />
+    </svg>
+  )
+}
+
+/**
  * Moon icon
  * @returns  {JSX.Element} Moon icon
  * @see https://simpleicons.org/?q=moon - Icon source
