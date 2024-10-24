@@ -11,3 +11,8 @@ next-env.d.ts
 # build
 /app
 dist
+.env
+
+# ignore all .DS_Store
+.DS_Store
+bun.lockb
