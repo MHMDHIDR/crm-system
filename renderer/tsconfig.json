@@ -3,6 +3,7 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
+    "moduleResolution": "bundler",
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {

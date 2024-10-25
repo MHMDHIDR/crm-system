@@ -7,6 +7,8 @@
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
+    "push": "drizzle-kit push --config=renderer/drizzle.config.ts",
+    "studio": "drizzle-kit studio --config=renderer/drizzle.config.ts",
     "postinstall": "electron-builder install-app-deps",
     "build": "nextron build",
     "build:mac": "nextron build --mac",
@@ -16,19 +18,30 @@
     "build:win64": "nextron build --win --x64"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@libsql/client": "^0.14.0",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@t3-oss/env-nextjs": "^0.11.1",
     "@tabler/icons-react": "^3.20.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "drizzle-orm": "^0.35.3",
     "electron-serve": "^1.3.0",
     "electron-store": "^8.2.0",
     "next-themes": "^0.3.0",
+    "react-hook-form": "^7.53.1",
     "sonner": "^1.5.0",
-    "tailwind-merge": "^2.5.4"
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20.17.0",
     "@types/react": "^18.3.12",
     "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.26.2",
     "electron": "^31.7.2",
     "electron-builder": "^24.13.3",
     "next": "^15.0.1",
